@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+html,
+body{
+    height:100%;
+    width:100%;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+
+}
+#top{
+    width: 100%;
+    min-height: 50vh;
+    background-image: url(https://plus.unsplash.com/premium_photo-1674406763863-b64be22c78a9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3JleSUyMGxhbmRzY2FwZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: 50% 60%;
+}
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0,0,0,0.5);
+}
+#text{
+    align-items: center;
+    display: flex;
+    justify-content:space-between ;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    padding: 0 10vw;
+    color: white;
+}
+#textright{
+    justify-content: space-between;
+    width: 40%;
+    display: flex;
+    
+}
+#textright p{
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 20%;
+}
+#text h1{
+    font-size: 4vw;
+}
+#bottom{
+    width: 100%;
+    min-height: 30vh;
+    background-color: rgb(250, 249, 252);
+    display: flex;
+    
+}
+#bone{
+    padding: 30px;
+    width: 25%;
+    min-height: inherit;
+    background-color: rgb(252, 251, 247);
+}
+#bone{
+    font-size: 12px;
+    margin-top: 20px;
+}
+#b2{
+    display: flex;
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://www.shutterstock.com/image-photo/silhouette-two-mountaineers-offer-helping-260nw-2501576833.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#b3{
+    width: 25%;
+    min-height: inherit;
+    background-color: rgb(60, 80, 61);
+}
+#b3top{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(60, 80, 61);
+}
+#b3top{
+    font-size: 10px;
+    margin-top: 10px;
+    padding: 30px;
+}
+#b3bottom{
+    width: 100%;
+    min-height: inherit;
+    background-image: url(https://c8.alamy.com/comp/2BCBBTB/spring-tree-colorful-nature-beautiful-flowering-japanese-cherry-sakura-background-with-flowers-on-a-spring-day-2BCBBTB.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#b4{
+    width: 30%;
+    min-height: inherit;
+    padding: 30px;
+    background-color: rgb(73, 71, 69);
+    color: white;
+    font-size: 10px;
+}
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.notf #photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aqua;
+
+}
+.notf p{
+    width: 90%;
+}
+@media(max-width: 500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #textright{
+        flex-direction: column;
+    }
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+}
